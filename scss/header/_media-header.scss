@@ -1,0 +1,10 @@
+@include mq("tablet", max) {
+	.header {
+		background-size: 80%, 30%, cover;
+	}
+}
+@media only screen and (min-width: 800px) and (max-width: 1300px) {
+	.header {
+		background-size: 50%, 10%, cover;
+	}
+}

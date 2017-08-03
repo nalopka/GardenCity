@@ -1,0 +1,15 @@
+.header {
+	height: 100vh;
+
+	background: 
+		url('../img/header/main-logo.png') center  no-repeat,
+		url('../img/header/logo-small.png') 50% 95%  no-repeat,
+		url('../img/header/logs.jpg') left top  no-repeat;
+	background-size: 50%, 7%, cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+@import "_media-header";

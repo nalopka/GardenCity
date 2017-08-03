@@ -1,0 +1,208 @@
+@charset "UTF-8";
+div, p, body, button, h1, h2, h3, h4, img, hr, li, ul, span, section, a, nav, form, option, select, label, input, button, header, footer {
+  margin: 0;
+  padding: 0; }
+
+p, h1, h2, h3, span {
+  cursor: default; }
+
+html {
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: Georgia, sans-serif; }
+
+@font-face {}h2 {
+  position: relative;
+  font-size: 3.75rem; }
+  h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 90px;
+    border-bottom: 2px solid black;
+    width: 115px; }
+  h2:after {
+    position: absolute;
+    left: -5px;
+    top: -60px;
+    z-index: -1;
+    content: "";
+    font-size: 7.5rem;
+    font-family: Georgia, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.3; }
+
+.container {
+  width: 80%;
+  height: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.header {
+  height: 100vh;
+  background: url("../img/header/main-logo.png") center no-repeat, url("../img/header/logo-small.png") 50% 95% no-repeat, url("../img/header/logs.jpg") left top no-repeat;
+  background-size: 50%, 7%, cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+@media screen and (max-width: 767px) {
+  .header {
+    background-size: 80%, 30%, cover; } }
+
+@media only screen and (min-width: 800px) and (max-width: 1300px) {
+  .header {
+    background-size: 50%, 10%, cover; } }
+
+.review {
+  height: 100vh;
+  min-height: 800px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem; }
+  .review .review-item {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .review .review-item h2, .review .review-item p {
+      position: relative;
+      z-index: 5; }
+    .review .review-item p {
+      font-size: 1.375em;
+      padding-bottom: 20px; }
+    .review .review-item h2 {
+      padding-bottom: 50px; }
+  .review .review-item:first-of-type {
+    background-color: #fff1bf; }
+    .review .review-item:first-of-type h2:after {
+      content: "Что это";
+      color: #d8c280; }
+  .review .review-item:nth-of-type(2) {
+    color: #fff1bf;
+    background: transparent url("../img/review/location.png") center no-repeat;
+    background-size: 100% 100%; }
+    .review .review-item:nth-of-type(2) h2:before {
+      border-color: #fff1bf; }
+    .review .review-item:nth-of-type(2) h2:after {
+      content: "Где";
+      color: #766849; }
+    .review .review-item:nth-of-type(2) p {
+      font-size: 2em;
+      padding-top: 170px; }
+    .review .review-item:nth-of-type(2) a {
+      text-decoration: none;
+      font-size: 2em;
+      cursor: default;
+      color: #fff1bf; }
+  .review .review-item:last-of-type {
+    width: 100%;
+    background-color: #fffcf3;
+    height: 30%;
+    border: 1px solid red; }
+    .review .review-item:last-of-type .container {
+      width: 450px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .review .review-item:last-of-type p {
+      font-style: italic;
+      text-align: center; }
+    .review .review-item:last-of-type .container:before {
+      position: absolute;
+      content: "";
+      width: 115px;
+      border: 1px solid black;
+      left: 40%;
+      bottom: 0px; }
+    .review .review-item:last-of-type .container:after {
+      position: absolute;
+      top: 40%;
+      left: -40px;
+      opacity: 0.3;
+      content: "“";
+      z-index: 1;
+      line-height: 0;
+      font-size: 240px;
+      color: #eedfb3; }
+
+@media screen and (max-width: 1023px) {
+  .review {
+    height: auto; }
+    .review .review-item {
+      padding: 100px 0;
+      width: 100%;
+      height: auto; }
+      .review .review-item p {
+        font-size: 1rem; }
+      .review .review-item h2 {
+        font-size: 2.5rem; }
+      .review .review-item h2:after {
+        font-size: 4.2rem;
+        top: -30px; }
+    .review .container {
+      width: 90%;
+      height: auto; }
+    .review .review-item:nth-of-type(2) {
+      font-size: 0.9rem;
+      background-position: 70%;
+      background-size: cover; }
+    .review .review-item:last-of-type .container {
+      width: 300px;
+      height: 100%; }
+    .review .review-item:last-of-type .container:before {
+      left: 30%;
+      bottom: -20px; }
+    .review .review-item:last-of-type .container:after {
+      top: 35%; } }
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .review .review-item h2:after {
+    font-size: 6rem;
+    top: -30px; }
+  .review .review-item:last-of-type .container:after {
+    font-size: 240px; } }
+
+.houses {
+  height: 100vh; }
