@@ -5,6 +5,7 @@
 	display: flex;
 	font-size: 1rem;
 
+
 	.review-item {
 		position: relative;
 		width: 50%;
@@ -27,15 +28,16 @@
 	}
 	// ----------
 	// LEFT
-	.review-item:first-of-type {
-		background-color: #fff1bf;
-		h2:after {
-			content:"Что это";
-			color: #d8c280;}
-	}
+	
+	.left {
+			background-color: #fff1bf;
+			h2:after {
+				content:"Что это";
+				color: #d8c280;}
+		}
 	// --------
 	// RIGHT
-	.review-item:nth-of-type(2) {
+	.right {
 		color: #fff1bf;
 		background:transparent url('../img/review/location.png') center no-repeat; 
 		background-size: 100% 100%;
@@ -56,7 +58,7 @@
 	}
 	// --------
 	// BOTTOM
-	.review-item:last-of-type {
+	.bottom {
 		width: 100%; 
 		background-color: #fffcf3;
 		height: 30%; 

@@ -13,12 +13,12 @@
 				width: 90%;
 				height: auto;
 			}
-		.review-item:nth-of-type(2) {
+		.right {
 			font-size: 0.9rem;
 			background-position: 70% ;
 			background-size: cover;
 		}
-		.review-item:last-of-type {
+		.bottom {
 			.container {  width: 300px; height: 100%;}
 			.container:before {left: 30%; bottom: -20px;}
 			.container:after {top: 35%;}
@@ -27,8 +27,7 @@
 	}
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-	.review .review-item {
-		h2:after {font-size: 6rem; top: -30px; }}
-	.review .review-item:last-of-type {.container:after { font-size: 240px;}}
+	.review .review-item { h2:after {font-size: 6rem; top: -30px; }}
+	.review .bottom {.container:after { font-size: 240px;}}
 	
 }

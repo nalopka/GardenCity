@@ -113,50 +113,50 @@ html {
       padding-bottom: 20px; }
     .review .review-item h2 {
       padding-bottom: 50px; }
-  .review .review-item:first-of-type {
+  .review .left {
     background-color: #fff1bf; }
-    .review .review-item:first-of-type h2:after {
+    .review .left h2:after {
       content: "Что это";
       color: #d8c280; }
-  .review .review-item:nth-of-type(2) {
+  .review .right {
     color: #fff1bf;
     background: transparent url("../img/review/location.png") center no-repeat;
     background-size: 100% 100%; }
-    .review .review-item:nth-of-type(2) h2:before {
+    .review .right h2:before {
       border-color: #fff1bf; }
-    .review .review-item:nth-of-type(2) h2:after {
+    .review .right h2:after {
       content: "Где";
       color: #766849; }
-    .review .review-item:nth-of-type(2) p {
+    .review .right p {
       font-size: 2em;
       padding-top: 170px; }
-    .review .review-item:nth-of-type(2) a {
+    .review .right a {
       text-decoration: none;
       font-size: 2em;
       cursor: default;
       color: #fff1bf; }
-  .review .review-item:last-of-type {
+  .review .bottom {
     width: 100%;
     background-color: #fffcf3;
     height: 30%;
     border: 1px solid red; }
-    .review .review-item:last-of-type .container {
+    .review .bottom .container {
       width: 450px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
-    .review .review-item:last-of-type p {
+    .review .bottom p {
       font-style: italic;
       text-align: center; }
-    .review .review-item:last-of-type .container:before {
+    .review .bottom .container:before {
       position: absolute;
       content: "";
       width: 115px;
       border: 1px solid black;
       left: 40%;
       bottom: 0px; }
-    .review .review-item:last-of-type .container:after {
+    .review .bottom .container:after {
       position: absolute;
       top: 40%;
       left: -40px;
@@ -184,24 +184,24 @@ html {
     .review .container {
       width: 90%;
       height: auto; }
-    .review .review-item:nth-of-type(2) {
+    .review .right {
       font-size: 0.9rem;
       background-position: 70%;
       background-size: cover; }
-    .review .review-item:last-of-type .container {
+    .review .bottom .container {
       width: 300px;
       height: 100%; }
-    .review .review-item:last-of-type .container:before {
+    .review .bottom .container:before {
       left: 30%;
       bottom: -20px; }
-    .review .review-item:last-of-type .container:after {
+    .review .bottom .container:after {
       top: 35%; } }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .review .review-item h2:after {
     font-size: 6rem;
     top: -30px; }
-  .review .review-item:last-of-type .container:after {
+  .review .bottom .container:after {
     font-size: 240px; } }
 
 .houses {
