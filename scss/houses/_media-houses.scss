@@ -1,0 +1,36 @@
+@include mq("tablet", max) {
+	.houses {
+		height: auto;
+		flex-flow: column;
+		.house-block {
+			width: 100%;
+		}
+		.container { justify-content: center;}
+		.left {
+			height: 600px;
+			.up { height: 300px;}
+			.down { 
+				height: 300px; 
+				background-size: cover;
+				.container {width: 100%;}}
+		}
+		.right {
+			height: 700px;
+			display: flex;
+			flex-direction: column-reverse;
+			.up {
+				height: 300px;
+				.container { width: 100%;}}
+			.down { 
+				height: 400px; 
+				background-size: cover;}
+		}
+		.bottom {
+			height: 250px;
+			.container {
+				height: 120px;
+				width: 80%;
+			}
+		}
+	}
+}

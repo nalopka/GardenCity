@@ -1,0 +1,6 @@
+@include mq("tablet-wide", max) {
+	p {font-size: 1rem;}
+	h2 {font-size: 2.5rem;} 
+	h2:after {font-size: 4.2rem; top: -30px;}
+	h3 {font-size: 2.5rem;}
+}

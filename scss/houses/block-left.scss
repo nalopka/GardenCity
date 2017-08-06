@@ -1,0 +1,29 @@
+.left {
+		.up {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 40%;
+			
+			h2 {
+				padding-bottom: 40px;
+				&:after {
+				content: "Готовые";
+				color: #d8c280;}
+			}
+	}
+
+		.down {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 60%;
+			background:transparent url('../img/houses/img-left.jpg') center no-repeat;
+			background-size: 100% 100%;
+			.container { height: 50%; align-items: center;}
+			h3 {
+				color: white;
+				&:before { border-color: white;}
+			}
+		}
+	}

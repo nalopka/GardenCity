@@ -1,34 +1,60 @@
-h2 {
-	position: relative;
 
-	font-size: 3.75rem;
+h2 {
+	position  : relative;
+	font-size : 3.75rem;
+	font-weight: 400;
+	z-index: 5;
 
 	&:before {
-		content: "";
-		position: absolute;
-		left:0;
-		top: 90px;
-		border-bottom: 2px solid black;
-		width: 115px;
+		content       : "";
+		position      : absolute;
+		left          : 0;
+		bottom: 20px;
+		border-bottom : 2px solid black;
+		width         : 115px;
 	}
 	&:after {
-		position: absolute;
-		left: -5px;
-		top: -60px;
-		z-index: -1;
-		content:"";
-		font-size: 7.5rem;
-		font-family: Georgia, sans-serif;
-		font-weight: 300;
-		font-style: italic;
-		opacity: 0.3;
+		position    : absolute;
+		left        : -5px;
+		top         : -65px;
+		z-index     : -1;
+		content     : " ";
+		font-size   : 7.5rem;
+		font-weight : 300;
+		font-style  : italic;
+		opacity     : 0.3;
 	}
 }
 .container {
-	width: 80%;
-	height: 70%;
-	position: relative;
+	width          : 80%;
+	height         : 70%;
+	position       : relative;
 
-	display: flex;
-	flex-direction: column;
+	display        : flex;
+	flex-direction : column;
+	
 }
+
+h3 {
+	position: relative;
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+}
+.upperline {
+	position: relative;
+	width: 150px;
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 22px;
+		left: 55px;
+		width: 50px;
+		border-top: 2px solid white;
+	}
+
+}
+@import "_media-main-style";

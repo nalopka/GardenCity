@@ -1,3 +1,14 @@
 .houses {
-	height: 100vh;
+	height: 150vh;
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 1000px;
+	.house-block {
+		width: 50%;
+		height: 70%;
+	}
+	@import "block-left";
+	@import "block-right";
+	@import "block-bottom";
 }
+@import "_media-houses";

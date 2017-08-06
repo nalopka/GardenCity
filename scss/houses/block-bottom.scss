@@ -1,0 +1,37 @@
+	.bottom {
+		width            : 100%;
+		background-color : #fffcf3;
+		height           : 30%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.container {
+			width            : 380px;
+			height: 30%;
+			justify-content  : center;}
+
+		p {
+			font-style: italic;
+			text-align: center;
+			font-size      : 1.375em;}
+		.container:before {
+			position : absolute;
+			content  : "";
+			width    : 115px;
+			border   : 1px solid black;
+			left     : 35%;
+			bottom   : -20px;}
+		.container:after {
+			position    : absolute;
+
+			top         : 40%;
+			left        : -40px;
+			
+			opacity     : 0.3;
+			content     : "“";
+			z-index     : 1;
+			line-height : 0;
+			font-size   : 240px;
+			
+			color       : #eedfb3;}
+}

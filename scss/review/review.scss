@@ -1,46 +1,43 @@
 .review {
-	height: 100vh;
-	min-height: 800px;
-	flex-flow: row wrap;
-	display: flex;
-	font-size: 1rem;
-
-
+	height          : 100vh;
+	min-height      : 800px;
+	flex-flow       : row wrap;
+	display         : flex;
+	font-size       : 1rem;
 	.review-item {
-		position: relative;
-		width: 50%;
-		height: 70%;
+		position        : relative;
+		width           : 50%;
+		height          : 70%;
 
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-items: center;
+		display         : flex;
+		flex-flow       : column wrap;
+		justify-content : center;
+		align-items     : center;
 
 		h2, p {
-			position: relative;
-			z-index: 5;}
+			position : relative;
+			z-index  : 5;}
 
 		p { 
-			font-size: 1.375em; 
-			padding-bottom: 20px; }
+			font-size      : 1.375em;
+			padding-bottom : 20px; }
 
-		h2 { padding-bottom: 50px;}
+		h2 { padding-bottom : 50px;}
 	}
 	// ----------
 	// LEFT
-	
 	.left {
-			background-color: #fff1bf;
+			background-color : #fff1bf;
 			h2:after {
-				content:"Что это";
-				color: #d8c280;}
+				content : "Что это";
+				color   : #d8c280;}
 		}
 	// --------
 	// RIGHT
 	.right {
-		color: #fff1bf;
-		background:transparent url('../img/review/location.png') center no-repeat; 
-		background-size: 100% 100%;
+		color           : #fff1bf;
+		background      : transparent url('../img/review/location.png') center no-repeat;
+		background-size : cover;
 			h2 {
 				&:before { border-color: #fff1bf;}
 				&:after {
@@ -51,45 +48,44 @@
 				font-size: 2em;
 				padding-top: 170px;}
 			a {
-				text-decoration: none;
-				font-size: 2em;
-				cursor: default;
-				color: #fff1bf;}
+				text-decoration : none;
+				font-size       : 2em;
+				cursor          : default;
+				color           : #fff1bf;}
 	}
 	// --------
 	// BOTTOM
 	.bottom {
-		width: 100%; 
-		background-color: #fffcf3;
-		height: 30%; 
-
-		border: 1px solid red;
+		width            : 100%;
+		background-color : #fffcf3;
+		height           : 30%;
 		.container {
-			width: 450px;
-			justify-content: center;}
+			width            : 450px;
+			justify-content  : center;}
+
 		p {
 			font-style: italic;
 			text-align: center;}
 		.container:before {
-				position: absolute;
-				content:"";
-				width: 115px;
-				border: 1px solid black;
-				left: 40%;
-				bottom: 0px;}
+			position : absolute;
+			content  : "";
+			width    : 115px;
+			border   : 1px solid black;
+			left     : 38%;
+			bottom   : 0px;}
 		.container:after {
-			position: absolute;
+			position    : absolute;
 
-			top: 40%;
-			left: -40px;
+			top         : 40%;
+			left        : -40px;
 			
-			opacity: 0.3;
-			content: "“";
-			z-index: 1;
-			line-height: 0;
-			font-size: 240px;
+			opacity     : 0.3;
+			content     : "“";
+			z-index     : 1;
+			line-height : 0;
+			font-size   : 240px;
 			
-			color: #eedfb3;}
+			color       : #eedfb3;}
 	}
 }
 @import "_media-review.scss";

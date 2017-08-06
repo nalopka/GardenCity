@@ -11,24 +11,26 @@ html {
   font-size: 16px;
   font-family: Georgia, sans-serif; }
 
-@font-face {}h2 {
+@font-face {}
+h2 {
   position: relative;
-  font-size: 3.75rem; }
+  font-size: 3.75rem;
+  font-weight: 400;
+  z-index: 5; }
   h2:before {
     content: "";
     position: absolute;
     left: 0;
-    top: 90px;
+    bottom: 20px;
     border-bottom: 2px solid black;
     width: 115px; }
   h2:after {
     position: absolute;
     left: -5px;
-    top: -60px;
+    top: -65px;
     z-index: -1;
-    content: "";
+    content: " ";
     font-size: 7.5rem;
-    font-family: Georgia, sans-serif;
     font-weight: 300;
     font-style: italic;
     opacity: 0.3; }
@@ -37,73 +39,69 @@ html {
   width: 80%;
   height: 70%;
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
+h3 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center; }
+
+.upperline {
+  position: relative;
+  width: 150px;
+  text-align: center;
+  color: white;
+  padding-top: 40px; }
+  .upperline:before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 55px;
+    width: 50px;
+    border-top: 2px solid white; }
+
+@media screen and (max-width: 1023px) {
+  p {
+    font-size: 1rem; }
+
+  h2 {
+    font-size: 2.5rem; }
+
+  h2:after {
+    font-size: 4.2rem;
+    top: -30px; }
+
+  h3 {
+    font-size: 2.5rem; } }
 .header {
   height: 100vh;
   background: url("../img/header/main-logo.png") center no-repeat, url("../img/header/logo-small.png") 50% 95% no-repeat, url("../img/header/logs.jpg") left top no-repeat;
   background-size: 50%, 7%, cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 @media screen and (max-width: 767px) {
   .header {
     background-size: 80%, 30%, cover; } }
-
 @media only screen and (min-width: 800px) and (max-width: 1300px) {
   .header {
     background-size: 50%, 10%, cover; } }
-
 .review {
   height: 100vh;
   min-height: 800px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   font-size: 1rem; }
   .review .review-item {
     position: relative;
     width: 50%;
     height: 70%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column wrap;
-    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
     .review .review-item h2, .review .review-item p {
       position: relative;
@@ -121,7 +119,7 @@ html {
   .review .right {
     color: #fff1bf;
     background: transparent url("../img/review/location.png") center no-repeat;
-    background-size: 100% 100%; }
+    background-size: cover; }
     .review .right h2:before {
       border-color: #fff1bf; }
     .review .right h2:after {
@@ -138,13 +136,9 @@ html {
   .review .bottom {
     width: 100%;
     background-color: #fffcf3;
-    height: 30%;
-    border: 1px solid red; }
+    height: 30%; }
     .review .bottom .container {
       width: 450px;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center; }
     .review .bottom p {
       font-style: italic;
@@ -154,7 +148,7 @@ html {
       content: "";
       width: 115px;
       border: 1px solid black;
-      left: 40%;
+      left: 38%;
       bottom: 0px; }
     .review .bottom .container:after {
       position: absolute;
@@ -174,13 +168,6 @@ html {
       padding: 100px 0;
       width: 100%;
       height: auto; }
-      .review .review-item p {
-        font-size: 1rem; }
-      .review .review-item h2 {
-        font-size: 2.5rem; }
-      .review .review-item h2:after {
-        font-size: 4.2rem;
-        top: -30px; }
     .review .container {
       width: 90%;
       height: auto; }
@@ -189,20 +176,182 @@ html {
       background-position: 70%;
       background-size: cover; }
     .review .bottom .container {
-      width: 300px;
-      height: 100%; }
+      width: 300px; }
     .review .bottom .container:before {
       left: 30%;
       bottom: -20px; }
     .review .bottom .container:after {
       top: 35%; } }
-
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .review .review-item h2:after {
     font-size: 6rem;
-    top: -30px; }
+    top: -40px; }
+
   .review .bottom .container:after {
     font-size: 240px; } }
-
 .houses {
-  height: 100vh; }
+  height: 150vh;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 1000px; }
+  .houses .house-block {
+    width: 50%;
+    height: 70%; }
+  .houses .left .up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%; }
+    .houses .left .up h2 {
+      padding-bottom: 40px; }
+      .houses .left .up h2:after {
+        content: "Готовые";
+        color: #d8c280; }
+  .houses .left .down {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    background: transparent url("../img/houses/img-left.jpg") center no-repeat;
+    background-size: 100% 100%; }
+    .houses .left .down .container {
+      height: 50%;
+      align-items: center; }
+    .houses .left .down h3 {
+      color: white; }
+      .houses .left .down h3:before {
+        border-color: white; }
+  .houses .right .up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    background: transparent url("../img/houses/img-right.jpg") center no-repeat;
+    background-size: 100% 100%; }
+    .houses .right .up .container {
+      height: 50%;
+      width: 60%;
+      align-items: center; }
+    .houses .right .up h3 {
+      color: white; }
+      .houses .right .up h3:before {
+        border-color: white; }
+  .houses .right .down {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden; }
+    .houses .right .down h2 {
+      padding-bottom: 40px; }
+      .houses .right .down h2:after {
+        content: "Проектирование";
+        color: #d8c280; }
+    .houses .right .down p {
+      padding-bottom: 10px;
+      width: 90%; }
+  .houses .bottom {
+    width: 100%;
+    background-color: #fffcf3;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .houses .bottom .container {
+      width: 380px;
+      height: 30%;
+      justify-content: center; }
+    .houses .bottom p {
+      font-style: italic;
+      text-align: center;
+      font-size: 1.375em; }
+    .houses .bottom .container:before {
+      position: absolute;
+      content: "";
+      width: 115px;
+      border: 1px solid black;
+      left: 35%;
+      bottom: -20px; }
+    .houses .bottom .container:after {
+      position: absolute;
+      top: 40%;
+      left: -40px;
+      opacity: 0.3;
+      content: "“";
+      z-index: 1;
+      line-height: 0;
+      font-size: 240px;
+      color: #eedfb3; }
+
+@media screen and (max-width: 767px) {
+  .houses {
+    height: auto;
+    flex-flow: column; }
+    .houses .house-block {
+      width: 100%; }
+    .houses .container {
+      justify-content: center; }
+    .houses .left {
+      height: 600px; }
+      .houses .left .up {
+        height: 300px; }
+      .houses .left .down {
+        height: 300px;
+        background-size: cover; }
+        .houses .left .down .container {
+          width: 100%; }
+    .houses .right {
+      height: 700px;
+      display: flex;
+      flex-direction: column-reverse; }
+      .houses .right .up {
+        height: 300px; }
+        .houses .right .up .container {
+          width: 100%; }
+      .houses .right .down {
+        height: 400px;
+        background-size: cover; }
+    .houses .bottom {
+      height: 250px; }
+      .houses .bottom .container {
+        height: 120px;
+        width: 80%; } }
+.inhouse {
+  height: 80vh;
+  display: flex; }
+  .inhouse .inhouse-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3%;
+    height: 100%; }
+  .inhouse .left {
+    background: transparent url("../img/inhouse-facilities/left.jpg") left top no-repeat;
+    background-size: 100% 100%; }
+  .inhouse .middle {
+    background: transparent url("../img/inhouse-facilities/middle.jpg") left top no-repeat;
+    background-size: 100% 100%;
+    color: white; }
+    .inhouse .middle .upperline {
+      color: white; }
+      .inhouse .middle .upperline:before {
+        border-color: white; }
+  .inhouse .right {
+    background: transparent url("../img/inhouse-facilities/right.jpg") left top no-repeat;
+    background-size: 100% 100%;
+    color: black; }
+  .inhouse .container {
+    justify-content: center;
+    align-items: center; }
+  .inhouse .upperline {
+    color: black; }
+    .inhouse .upperline:before {
+      border-color: black; }
+
+@media screen and (max-width: 767px) {
+  .inhouse {
+    height: auto;
+    flex-direction: column; }
+    .inhouse .inhouse-block {
+      width: 100%;
+      height: 400px; } }
