@@ -1,7 +1,7 @@
 	.bottom {
 		width            : 100%;
 		background-color : #fffcf3;
-		height           : 30%;
+		height           : 20%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -12,8 +12,7 @@
 
 		p {
 			font-style: italic;
-			text-align: center;
-			font-size      : 1.375em;}
+			text-align: center;}
 		.container:before {
 			position : absolute;
 			content  : "";

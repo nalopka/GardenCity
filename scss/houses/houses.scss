@@ -1,12 +1,11 @@
 .houses {
-	height: 150vh;
+	height: 160vh;
 	display: flex;
 	flex-flow: row wrap;
-	min-height: 1000px;
 	font-size       : 1.375rem;
 	.house-block {
 		width: 50%;
-		height: 70%;
+		height: 80%;
 	}
 	@import "block-left";
 	@import "block-right";

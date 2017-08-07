@@ -1,60 +1,101 @@
 .area {
-	height: 140vh;
+	height: 180vh;
+	min-height: 1200px;
 	display: flex;
 	flex-flow: column wrap;
 	font-size: 1.375rem;
 	.area-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 		width: 50%;
 	}
+	// -------
+	// WHITE BLOCK
 	.area-block:first-of-type {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+		flex-grow: 1;
+		order: 1;
 		background-color: white; 
-		height: 40%;
+		height: 30%;
 		h2:after {
 			content:"Участок";} 
-		p { padding-top: 20px; width: 80%;}
+		p { padding-top: 20px; width: 90%;}
 	}
+
+	// -------
+	// GREEN BLOCK
 	.area-block:nth-of-type(2) {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+
+		order: 2;
 		background:transparent url('../img/about-area/green.jpg') center no-repeat;
 		background-size: 100% 100%;
-		height: 30%; 
+		height: 25%; 
 		color: white;
 		.container{
 			align-items: center;
 			width: 40%;}
 	}
 
-
+	// -------
+	// BLUE BLOCK
 	.area-block:nth-of-type(3) {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+
+		order: 3;
 		color: white;
 		background:transparent url('../img/about-area/blue.jpg') left top no-repeat; 
 		background-size: 100% 100%;
-		height: 30%; 
-		.container{
+		height: 25%; 
+		.container {
 			align-items: center;
 			width: 40%;}
 	}
-	.area-block:nth-of-type(4) {background-color: yellow; height: 30%; }
+	// --------
+	// COMMA BLOCK
+	.area-block:nth-of-type(4) {
 
-
-	.area-block:last-of-type {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+		order: 5;
+		background-color: #fffcf3; 
+		height: 25%; 
+		p {
+			font-style: italic;
+			text-align: center;}
+		.container { width: 380px; height: 30%;}
+		.container:before {
+			position : absolute;
+			content  : "";
+			width    : 115px;
+			border   : 1px solid black;
+			left     : 35%;
+			bottom   : -20px;}
+		.container:after {
+			position    : absolute;
+			top         : 40%;
+			left        : -40px;
+			opacity     : 0.3;
+			content     : "“";
+			z-index     : 1;
+			line-height : 0;
+			font-size   : 240px;
+			color       : #eedfb3;}
+	}
+	// -------------
+	// CLAY BLOCK
+	.area-block:nth-of-type(5){
+		order: 6;
 		color: white;
 		background:transparent url('../img/about-area/clay.jpg') left top no-repeat;
 		background-size: 100% 100%;
-		height: 70%; 
-		.container{
+		height: 55%; 
+		.container {
 			align-items: center;
 			width: 40%;}
 	}
+	// .area-block:last-of-type {
+	// 	order: 4;
+	// 	height: 20%;
+	// 	width: 100%;
+	// 	// flex-grow: 2;
+	// 	background-color: red;
+	// }
 }
+@import "_media-about-area";
