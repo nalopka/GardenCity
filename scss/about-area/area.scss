@@ -1,0 +1,60 @@
+.area {
+	height: 140vh;
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 1.375rem;
+	.area-block {
+		width: 50%;
+	}
+	.area-block:first-of-type {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-color: white; 
+		height: 40%;
+		h2:after {
+			content:"Участок";} 
+		p { padding-top: 20px; width: 80%;}
+	}
+	.area-block:nth-of-type(2) {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background:transparent url('../img/about-area/green.jpg') center no-repeat;
+		background-size: 100% 100%;
+		height: 30%; 
+		color: white;
+		.container{
+			align-items: center;
+			width: 40%;}
+	}
+
+
+	.area-block:nth-of-type(3) {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		color: white;
+		background:transparent url('../img/about-area/blue.jpg') left top no-repeat; 
+		background-size: 100% 100%;
+		height: 30%; 
+		.container{
+			align-items: center;
+			width: 40%;}
+	}
+	.area-block:nth-of-type(4) {background-color: yellow; height: 30%; }
+
+
+	.area-block:last-of-type {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		color: white;
+		background:transparent url('../img/about-area/clay.jpg') left top no-repeat;
+		background-size: 100% 100%;
+		height: 70%; 
+		.container{
+			align-items: center;
+			width: 40%;}
+	}
+}

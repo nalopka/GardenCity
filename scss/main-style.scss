@@ -4,6 +4,7 @@ h2 {
 	font-size : 3.75rem;
 	font-weight: 400;
 	z-index: 5;
+	padding-bottom: 50px;
 
 	&:before {
 		content       : "";
@@ -14,6 +15,7 @@ h2 {
 		width         : 115px;
 	}
 	&:after {
+		color: #d8c280;
 		position    : absolute;
 		left        : -5px;
 		top         : -65px;
@@ -32,6 +34,7 @@ h2 {
 
 	display        : flex;
 	flex-direction : column;
+	justify-content: center;
 	
 }
 
@@ -47,6 +50,7 @@ h3 {
 	text-align: center;
 	color: white;
 	padding-top: 40px;
+	font-size: 1.5rem;
 	&:before {
 		content: "";
 		position: absolute;

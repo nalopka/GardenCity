@@ -1,6 +1,7 @@
 @include mq("tablet-wide", max) {
 	.review {
 		height: auto;
+		font-size: 1rem;
 		.review-item {
 			padding: 100px 0;
 			width: 100%;
