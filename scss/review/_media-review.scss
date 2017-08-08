@@ -5,21 +5,20 @@
 		.review-item {
 			padding: 100px 0;
 			width: 100%;
-			height: auto;	
+			height: auto;
 		}
-		.container {
+		.left {
+			.container {
 				width: 90%;
-				height: auto;
-			}
+				height: auto;}
+		}
 		.right {
 			font-size: 0.9rem;
 			background-position: 70% ;
 			background-size: cover;
-		}
-		.bottom {
-			.container {  width: 300px;}
-			.container:before {left: 30%; bottom: -20px;}
-			.container:after {top: 35%;}
+			.container {
+				width: 90%;
+				height: auto;}
 		}
 
 	}

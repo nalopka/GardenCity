@@ -25,22 +25,24 @@
 	// ----------
 	// LEFT
 	.left {
-			background-color : #fff1bf;
+			.container { justify-content: flex-start;  padding-top: 50px;}
+			background-color : $milk;
 			h2:after {
 				content : "Что это";
-				color   : #d8c280;}
+				}
 		}
 	// --------
 	// RIGHT
 	.right {
-		color           : #fff1bf;
+		.container {  justify-content: flex-start; padding-top: 50px;}
+		color           : $milk;
 		background      : transparent url('../img/review/location.png') center no-repeat;
 		background-size : cover;
 			h2 {
-				&:before { border-color: #fff1bf;}
+				&:before { border-color: $milk;}
 				&:after {
 				content:"Где";
-				color: #766849;}
+				color: $dark-milk;}
 			}
 			p {
 				font-size: 2em;
@@ -49,41 +51,16 @@
 				text-decoration : none;
 				font-size       : 2em;
 				cursor          : default;
-				color           : #fff1bf;}
+				color           : $milk;}
 	}
 	// --------
 	// BOTTOM
 	.bottom {
 		width            : 100%;
-		background-color : #fffcf3;
+		background-color : $comma-bg;
 		height           : 30%;
 		.container {
-			width            : 450px;
 			justify-content  : center;}
-
-		p {
-			font-style: italic;
-			text-align: center;}
-		.container:before {
-			position : absolute;
-			content  : "";
-			width    : 115px;
-			border   : 1px solid black;
-			left     : 38%;
-			bottom   : 0px;}
-		.container:after {
-			position    : absolute;
-
-			top         : 40%;
-			left        : -40px;
-			
-			opacity     : 0.3;
-			content     : "“";
-			z-index     : 1;
-			line-height : 0;
-			font-size   : 240px;
-			
-			color       : #eedfb3;}
 	}
 }
 @import "_media-review.scss";

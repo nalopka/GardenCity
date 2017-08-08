@@ -1,14 +1,16 @@
 .right {
-	.up {
+	.up,
+	.down {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		height: 50%;
+		height: 50%;}
+	.up {
 		background:transparent url('../img/houses/img-right.jpg') center  no-repeat;
 		background-size: 100% 100%;
 		.container {
 			height: 50%; 
-			width: 40%;
+			width: 50%;
 			align-items: center;
 		}
 		h3 {
@@ -17,11 +19,8 @@
 		}
 	}
 	.down {
-		height: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
 		overflow: hidden;
+		background-color: white;
 		h2 {
 			padding-bottom: 40px;	
 			&:after {

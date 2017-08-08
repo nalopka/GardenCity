@@ -10,16 +10,22 @@ html {
 	font-size: 16px;
 	font-family: Georgia, sans-serif;
 }
+body {
+	max-width: 2000px;
+	background-color: #fffcf3;
+	margin: 0 auto;
+}
 
 @import "UI/fonts";
 @import "UI/color";
 @import "mixins";
-@import "main-style.scss";
+@import "main-style";
 
 
 @import "header/header";
-@import "review/review.scss";
-@import "houses/houses.scss";
+@import "review/review";
+@import "houses/houses";
 @import "inhouse-facilities/inhouse-facilities";
-@import "about-area/area.scss";
+@import "about-area/area";
 @import "decor/decor";
+@import "relaxation/relaxation";

@@ -3,7 +3,6 @@
 		height: auto;
 		flex-flow: column;
 		font-size       : 1rem;
-		border: 1px solid red;
 		.house-block {
 			width: 100%;
 		}
@@ -14,7 +13,8 @@
 			.down { 
 				height: 300px; 
 				background-size: cover;
-				.container {width: 100%;}}
+				.container {width: 100%;}
+			}
 		}
 		.right {
 			height: 700px;
@@ -22,7 +22,8 @@
 			flex-direction: column-reverse;
 			.up {
 				height: 300px;
-				.container { width: 100%;}}
+				.container { width: 100%;}
+			}
 			.down { 
 				h2 {font-size: 2.2rem;}
 				height: 400px; 

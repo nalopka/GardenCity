@@ -1,0 +1,56 @@
+.relaxation {
+	height: 130vh;
+	min-height: 1200px;
+	display: flex;
+	flex-flow: column wrap;
+	font-size: 1.375rem;
+
+	.container {
+		align-items: center;
+		// width: 50%;
+		height: 50%;
+		border: 1px solid red;
+	}
+	.relaxation-item { 
+		background-color: white;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 50%;}
+
+	.relaxation-item:first-of-type {
+		color: white;
+		background:transparent url('../img/relaxation/bathhouse.jpg') center no-repeat;
+		background-size: cover;
+		height: 30%;}
+
+	.relaxation-item:nth-of-type(2) {
+		overflow: hidden;
+		.container { 
+			height: 60%;
+			width: 80%;
+			align-items: flex-start;}
+		height: 40%;
+		p {padding-top: 10px; width: 80%;}
+		h2:after {content:"Место для отдыха"; width: 1500px;}
+	}
+
+	.relaxation-item:nth-of-type(3) {
+		color: white;
+		background:transparent url('../img/relaxation/bbq.jpg') left top no-repeat;
+		background-size: 100% 100%;
+		height: 30%;}
+
+	.relaxation-item:nth-of-type(4) {
+		color: white;
+		background:transparent url('../img/relaxation/playground.jpg') left top no-repeat;
+		background-size: 100% 100%;
+		height: 70%;}
+
+	.relaxation-item:last-of-type {
+		overflow: hidden;
+		.container {width: 350px; height: 150px;}
+		background-color: $comma-bg;
+		height: 30%;}
+}
+@import "_media-relaxation.scss";
