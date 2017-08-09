@@ -87,7 +87,7 @@ body {
 
 h3 {
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
   text-align: center; }
 
@@ -205,10 +205,10 @@ h3 {
     background: transparent url("../img/review/location.png") center no-repeat;
     background-size: cover; }
     .review .right .container {
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       padding-top: 50px; }
     .review .right h2:before {
       border-color: #fff1bf; }
@@ -216,12 +216,11 @@ h3 {
       content: "Где";
       color: #766849; }
     .review .right p {
-      font-size: 2em;
-      padding-top: 170px; }
+      font-size: 2em; }
     .review .right a {
       text-decoration: none;
       font-size: 2em;
-      cursor: default;
+      cursor: pointer;
       color: #fff1bf; }
   .review .bottom {
     width: 100%;
@@ -261,6 +260,7 @@ h3 {
 
 .houses {
   height: 160vh;
+  min-height: 1200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -503,8 +503,9 @@ h3 {
     justify-content: space-around;
     width: 50%; }
   .area .area-block:first-of-type {
+    overflow: hidden;
     background-color: white;
-    height: 30%; }
+    height: 40%; }
     .area .area-block:first-of-type h2:after {
       content: "Участок"; }
     .area .area-block:first-of-type p {
@@ -513,19 +514,19 @@ h3 {
   .area .area-block:nth-of-type(2) {
     background: transparent url("../img/about-area/green.jpg") center no-repeat;
     background-size: 100% 100%;
-    height: 25%;
+    height: 20%;
     color: white; }
     .area .area-block:nth-of-type(2) .container {
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      width: 40%; }
+      width: 45%; }
   .area .area-block:nth-of-type(3) {
     color: white;
     background: transparent url("../img/about-area/blue.jpg") left top no-repeat;
     background-size: 100% 100%;
-    height: 25%; }
+    height: 20%; }
     .area .area-block:nth-of-type(3) .container {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -548,6 +549,7 @@ h3 {
       width: 40%; }
   .area .area-block:last-of-type {
     position: absolute;
+    left: 0;
     bottom: 0;
     height: 20%;
     width: 100%;
@@ -696,9 +698,8 @@ h3 {
       color: white;
       width: 100%; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1247px) {
   .decor {
-    border: 1px solid red;
     height: auto;
     min-height: 1000px;
     -webkit-box-orient: vertical;
@@ -712,6 +713,9 @@ h3 {
     .decor .decor-item:first-of-type h2:after {
       width: 250px;
       line-height: 70px; }
+    .decor .decor-item:nth-of-type(2) {
+      background-size: 1000px 1000px;
+      background-position: center; }
     .decor .decor-item:nth-of-type(3) {
       height: 800px; }
       .decor .decor-item:nth-of-type(3) .up, .decor .decor-item:nth-of-type(3) .down {
@@ -735,8 +739,7 @@ h3 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 50%;
-    border: 1px solid red; }
+    height: 50%; }
   .relaxation .relaxation-item {
     background-color: white;
     display: -webkit-box;
@@ -809,3 +812,59 @@ h3 {
       height: 200px; }
     .relaxation .relaxation-item:last-of-type {
       height: 200px; } }
+
+.footer {
+  min-height: 400px;
+  height: 50vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #594f3c; }
+  .footer .container {
+    width: 800px;
+    height: 70%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer p {
+    position: relative;
+    color: #fff1bf;
+    text-align: center;
+    font-size: 3.5rem; }
+    .footer p:after {
+      content: "";
+      position: absolute;
+      left: 43%;
+      bottom: -40px;
+      border-bottom: 2px solid #fff1bf;
+      width: 115px; }
+  .footer a {
+    padding-top: 70px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; }
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    height: 500px; }
+    .footer .container {
+      width: 320px; }
+    .footer p {
+      font-size: 2.5rem; }
+      .footer p:after {
+        left: 105px; } }

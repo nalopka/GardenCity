@@ -1,6 +1,5 @@
-@include mq("tablet-wide", max) {
+@include mq("desktop", max) {
 	.decor {
-		border: 1px solid red;
 		height: auto;
 		min-height: 1000px;
 		flex-flow: column;
@@ -11,6 +10,9 @@
 		.decor-item:first-of-type {
 			h2:after { width: 250px; line-height: 70px;}
 		}
+		.decor-item:nth-of-type(2) {
+			background-size: 1000px 1000px;
+			background-position: center;}
 		.decor-item:nth-of-type(3) {
 			height: 800px;
 			.up, .down {

@@ -34,7 +34,7 @@
 	// --------
 	// RIGHT
 	.right {
-		.container {  justify-content: flex-start; padding-top: 50px;}
+		.container { justify-content: space-between; padding-top: 50px;}
 		color           : $milk;
 		background      : transparent url('../img/review/location.png') center no-repeat;
 		background-size : cover;
@@ -45,12 +45,11 @@
 				color: $dark-milk;}
 			}
 			p {
-				font-size: 2em;
-				padding-top: 170px;}
+				font-size: 2em;}
 			a {
 				text-decoration : none;
 				font-size       : 2em;
-				cursor          : default;
+				cursor          : pointer;
 				color           : $milk;}
 	}
 	// --------
