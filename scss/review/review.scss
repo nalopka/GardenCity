@@ -10,47 +10,42 @@
 		height          : 70%;
 
 		display         : flex;
-		flex-flow       : column wrap;
-		justify-content : center;
-		align-items     : center;
+		flex-flow       : column;
+		
+		box-sizing: border-box;
+		padding: 5% 5%;
 
 		h2, p {
 			position : relative;
 			z-index  : 5;}
 
-		p { 
-			padding-bottom : 20px; }
+		p { padding-bottom : 20px; }
 
 	}
 	// ----------
 	// LEFT
 	.left {
-			// .container { justify-content: flex-start;  padding-top: 50px;}
 			background-color : #fff1bf;
-			h2:after {
-				content : "Что это";
-				}
+			h2:after {color: #f0dfa7;}
 		}
 	// --------
 	// RIGHT
 	.right {
-		.container { justify-content: space-between; padding-top: 50px;}
+		justify-content: space-between;
 		color           : $milk;
-		background      : transparent url('../img/review/location.png') center no-repeat;
-		background-size : cover;
-			h2 {
-				&:before { border-color: $milk;}
-				&:after {
-				content:"Где";
-				color: $dark-milk;}
-			}
-			p {
-				font-size: 2em;}
-			a {
-				text-decoration : none;
-				font-size       : 2em;
-				cursor          : pointer;
-				color           : $milk;}
+		background      : transparent url('../img/review/location.png') center/cover no-repeat;
+		padding-bottom: 10%;
+		h2 {
+			&:before { border-color: $milk;}
+			&:after { color: $dark-milk;}
+		}
+		p {
+			font-size: 2em;}
+		a {
+			text-decoration : none;
+			font-size       : 2em;
+			cursor          : pointer;
+			color           : $milk;}
 	}
 	// --------
 	// BOTTOM

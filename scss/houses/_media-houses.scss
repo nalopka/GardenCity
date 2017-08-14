@@ -1,27 +1,23 @@
 @include mq("desktop", max) {
 	.houses {
 		height: auto;
+		min-height: 1400px;
 		flex-flow: column;
-		font-size       : 1rem;
-		.house-block {
+		.white,
+		.panel-house,
+		.wood-house,
+		.bottom {
 			width: 100%;
 		}
-		.left {
-			height: 600px;
-			.up, 
-			.down {  height: 300px;}
+		.white {
+			height: 400px;
 		}
-		.right {
-			height: 700px;
-			display: flex;
-			flex-direction: column-reverse;
-			.up { height: 300px;}
-			.down { 
-				h2 {
-					font-size: 2.2rem;}
-					height: 400px;}
+		.panel-house,
+		.wood-house,
+		.bottom {
+			height: 300px;
 		}
-		.bottom {height: 250px;}
-		.comma-block p:before {bottom: -30px;}
+		.bottom { position: relative;}
+
 	}
 }

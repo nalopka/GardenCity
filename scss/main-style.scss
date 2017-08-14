@@ -3,6 +3,8 @@
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
+	background-color: white;
+	overflow: hidden;
 	padding: 0 5% 0 5%;
 	box-sizing: border-box;
 	p { padding-bottom: 20px;}
@@ -31,16 +33,16 @@ h2 {
 		width         : 115px;}
 
 	&:after {
-		color: #d8c280;
+		color: #f5ebce;
 		position    : absolute;
 		left        : -5px;
 		top         : -65px;
 		z-index     : -1;
-		content     : " ";
+		content     : " "attr(data-name)" ";
 		font-size   : 7.5rem;
-		font-weight : 300;
+		font-weight : 400;
 		font-style  : italic;
-		opacity     : 0.3;}
+}
 }
 
 .comma-block {
@@ -48,6 +50,7 @@ h2 {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	background-color: $comma-bg;
 	p {
 		position: relative;
 		font-size: 1.375rem;

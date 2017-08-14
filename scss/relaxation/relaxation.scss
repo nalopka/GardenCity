@@ -22,7 +22,7 @@
 		@extend .white-block;
 		overflow: hidden;
 		height: 40%;
-		h2:after {content:""attr(data-text)""; width: 1500px;}
+		h2:after {width: 1500px;}
 	}
 
 	.bbq {

@@ -2,13 +2,34 @@
 	height: 160vh;
 	min-height: 1200px;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	font-size       : 1.375rem;
-	.house-block {
+	position: relative;
+	.white,
+	.panel-house,
+	.wood-house { 
 		width: 50%;
+		height: 40%;}
+
+	.white {
+		@extend .white-block;}
+
+	.panel-house,
+	.wood-house {
+		@extend .shop-block;
+		h3 {color: white; padding: 0 25%; box-sizing: border-box;}
+		p {color: white; &:before {border-color: white;}}
 	}
-	@import "block-left";
-	@import "block-right";
-	@import "block-bottom";
+	.panel-house {
+		background:transparent url('../img/houses/img-left.jpg') center/cover  no-repeat;}
+	.wood-house { 
+		background:transparent url('../img/houses/img-right.jpg') center/cover  no-repeat;}
+	.bottom { 
+		@extend .comma-block;
+		position: absolute;
+		height: 20%;
+		bottom: 0;
+		left: 0;
+		width: 100%;}
 }
 @import "_media-houses";

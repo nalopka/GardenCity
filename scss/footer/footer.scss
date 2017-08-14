@@ -2,16 +2,12 @@
 	min-height: 400px;
 	height: 50vh;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 	align-items: center;
 	justify-content: center;
 	background-color: #594f3c;
-	.container {
-		width: 800px;
-		height: 70%;
-		align-items: center;
-	}
 		p {
+			width: 500px;
 			position: relative;
 			color: $milk;
 			text-align: center;
@@ -19,7 +15,7 @@
 			&:after {
 				content: "";
 				position: absolute;
-				left: 43%;
+				left: 38%;
 				bottom: -40px;
 				border-bottom: 2px solid $milk;
 				width: 115px;}

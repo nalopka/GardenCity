@@ -3,28 +3,10 @@
 		height: auto;
 		font-size: 1rem;
 		.review-item {
-			padding: 100px 0;
-			width: 100%;
-			height: auto;
-		}
-		.left {
-			.container {
-				width: 90%;
-				height: auto;}
-		}
+			height: 400px;
+			width: 100%;}
 		.right {
 			font-size: 0.9rem;
-			background-position: 70% ;
-			background-size: cover;
-			.container {
-				width: 90%;
-				height: auto;}
-		}
-
+			background-position: 70%;}
 	}
-}
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-	.review .review-item { h2:after {font-size: 6rem; top: -40px; }}
-	.review .bottom {.container:after { font-size: 240px;}}
-	
 }

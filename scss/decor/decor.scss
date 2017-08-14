@@ -12,11 +12,9 @@
 		background-color: white;
 		overflow: hidden;
 		h2 {
-			max-width: 250px;
 			&:after {
-				content: "Мебель и  декор"; 
-				line-height: 90px; 
-				width: 500px;
+				line-height: 70px; 
+				width: 400px;
 				top: -30px;}
 		}
 	}

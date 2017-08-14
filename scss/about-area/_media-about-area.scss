@@ -1,14 +1,15 @@
-@include mq("tablet", max) {
+@include mq("desktop", max) {
 	.area {
-		min-height: 1900px;
+		min-height: 1600px;
 		flex-flow: column nowrap;
 		.area-block {
+			height: 400px;
 			width: 100%;}
-		.white { order: 1; height: 400px;}
-		.green { order: 3; height: 300px; }
-		.blue {order: 5; height: 300px; }
-		.area-block:nth-of-type(4) { order: -1; height: 300px;}
-		.clay {order: 2; height: 300px;}
-		.area-block:last-of-type { order: 4; height: 300px; position: relative;}
+		.white { order: 1; height: 600px; }
+		.green { order: 3;  }
+		.blue {order: 5; }
+		.area-block:nth-of-type(4) { order: -1; }
+		.clay {order: 2; }
+		.area-block:last-of-type { order: 4; height: 400px; position: relative;}
 	}
 }
