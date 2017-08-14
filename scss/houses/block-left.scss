@@ -1,22 +1,23 @@
 .left {
+	height: 80%;
 		.up,
 		.down {
 			display: flex;
-			align-items: center;
-			justify-content: space-around;
 			background-color: white;
 			height: 50%;}
 		.up {
+			@extend .white-block;
 			h2 {
 				&:after {
-				content: "Готовые";}
+				content: " "attr(data-text)" ";}
 			}
 		}
 		.down {
+			@extend .shop-block;
 			background: white url('../img/houses/img-left.jpg') center no-repeat;
-			background-size: 100% 100%;
-			.container { height: 50%; width: 40%; align-items: center;}
+			background-size: cover;
 			h3 {
+				padding: 0 10%;
 				color: white;
 				&:before { border-color: white;}
 			}

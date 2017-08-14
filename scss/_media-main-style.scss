@@ -4,11 +4,11 @@
 	h2:after {font-size: 4.2rem; top: -30px;}
 	h3 {font-size: 1.5rem;}
 	.upperline {font-size: 1rem;}
-	.comma-container { 
+	.comma-block p { 
 		width: 300px;
-		&:before {left: 90px}
+		&:before {left: 90px; bottom: -60px;}
 		&:after {left: 0;}
 	}
-	.comma-container:after {left: 0;}
+	.comma-block:after {left: 0;}
 	
 }

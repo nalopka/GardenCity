@@ -4,19 +4,16 @@
 		min-height: 1000px;
 		flex-flow: column;
 		.decor-item {
-
 			width: 100%;
 			height: 400px;}
 		.decor-item:first-of-type {
 			h2:after { width: 250px; line-height: 70px;}
 		}
-		.decor-item:nth-of-type(2) {
-			background-size: 1000px 1000px;
-			background-position: center;}
 		.decor-item:nth-of-type(3) {
 			height: 800px;
 			.up, .down {
 				height: 400px;}
 		}
+		.comma-block p:before {bottom: -30px;}
 	}
 }

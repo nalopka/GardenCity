@@ -5,50 +5,43 @@
 	flex-flow: column wrap;
 	font-size: 1.375rem;
 
-	.container {
-		align-items: center;
-		height: 50%;
-	}
-	.relaxation-item { 
-		background-color: white;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+	.bathhouse,
+	.white,
+	.bbq,
+	.playground,
+	.comma { 
 		width: 50%;}
 
-	.relaxation-item:first-of-type {
+	.bathhouse {
+		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/bathhouse.jpg') center no-repeat;
-		background-size: cover;
+		background:transparent url('../img/relaxation/bathhouse.jpg') center/cover no-repeat;
 		height: 30%;}
 
-	.relaxation-item:nth-of-type(2) {
+	.white {
+		@extend .white-block;
 		overflow: hidden;
-		.container { 
-			height: 60%;
-			width: 80%;
-			align-items: flex-start;}
 		height: 40%;
-		p {padding-top: 10px; width: 80%;}
-		h2:after {content:"Место для отдыха"; width: 1500px;}
+		h2:after {content:""attr(data-text)""; width: 1500px;}
 	}
 
-	.relaxation-item:nth-of-type(3) {
+	.bbq {
+		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/bbq.jpg') left top no-repeat;
-		background-size: 100% 100%;
+		background:transparent url('../img/relaxation/bbq.jpg') center/cover no-repeat;
 		height: 30%;}
 
-	.relaxation-item:nth-of-type(4) {
+	.playground {
+		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/playground.jpg') left top no-repeat;
-		background-size: 100% 100%;
+		background:transparent url('../img/relaxation/playground.jpg') center/cover no-repeat;
 		height: 70%;}
 
-	.relaxation-item:last-of-type {
+	.comma {
+		@extend .comma-block;
 		overflow: hidden;
-		.container {width: 350px; height: 150px;}
 		background-color: $comma-bg;
 		height: 30%;}
 }
+
 @import "_media-relaxation.scss";

@@ -1,34 +1,26 @@
 .right {
+	height: 80%;
 	.up,
 	.down {
 		display: flex;
-		align-items: center;
-		justify-content: space-around;
 		height: 50%;}
 	.up {
-		background:transparent url('../img/houses/img-right.jpg') center  no-repeat;
-		background-size: 100% 100%;
-		.container {
-			height: 50%; 
-			width: 50%;
-			align-items: center;
-		}
+		@extend .shop-block;
+		background:transparent url('../img/houses/img-right.jpg') center/cover  no-repeat;
 		h3 {
 			color: white;
+			padding: 0 5%;
 			&:before { border-color: white;}
 		}
 	}
 	.down {
+		@extend .white-block;
 		overflow: hidden;
 		background-color: white;
-		h2 {
-			padding-bottom: 40px;	
+		h2 {	
 			&:after {
-
-				content: "Проектирование";
-				color: #d8c280;
-			}	
+				content: " "attr(data-text)" ";
+				color: #d8c280;}	
 		}
-		p {padding-bottom: 10px; width: 90%;}
 	}
 }

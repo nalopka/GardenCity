@@ -1,4 +1,4 @@
-@include mq("tablet", max) {
+@include mq("desktop", max) {
 	.houses {
 		height: auto;
 		flex-flow: column;
@@ -6,31 +6,22 @@
 		.house-block {
 			width: 100%;
 		}
-		.container { justify-content: center;}
 		.left {
 			height: 600px;
-			.up { height: 300px;}
-			.down { 
-				height: 300px; 
-				background-size: cover;
-				.container {width: 100%;}
-			}
+			.up, 
+			.down {  height: 300px;}
 		}
 		.right {
 			height: 700px;
 			display: flex;
 			flex-direction: column-reverse;
-			.up {
-				height: 300px;
-				.container { width: 100%;}
-			}
+			.up { height: 300px;}
 			.down { 
-				h2 {font-size: 2.2rem;}
-				height: 400px; 
-				background-size: cover;}
+				h2 {
+					font-size: 2.2rem;}
+					height: 400px;}
 		}
-		.bottom {
-			height: 250px;
-		}
+		.bottom {height: 250px;}
+		.comma-block p:before {bottom: -30px;}
 	}
 }

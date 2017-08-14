@@ -1,8 +1,6 @@
 @include mq("tablet-wide", max) {
 	.footer {
 		height: 500px;
-		.container { width: 320px}
-
 		p { font-size: 2.5rem;
 			&:after {left: 105px;}}
 

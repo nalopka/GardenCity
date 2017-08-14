@@ -3,13 +3,12 @@
 		min-height: 1900px;
 		flex-flow: column nowrap;
 		.area-block {
-			width: 100%;
-		}
-		.area-block:first-of-type { order: 1; height: 400px;}
-		.area-block:nth-of-type(2) { order: 3; height: 300px; .container {width: 100%;}}
-		.area-block:nth-of-type(3) {order: 5; height: 300px; .container {width: 90%;}}
+			width: 100%;}
+		.white { order: 1; height: 400px;}
+		.green { order: 3; height: 300px; }
+		.blue {order: 5; height: 300px; }
 		.area-block:nth-of-type(4) { order: -1; height: 300px;}
-		.area-block:nth-of-type(5) {order: 2; height: 300px; .container{ width: inherit;}}
+		.clay {order: 2; height: 300px;}
 		.area-block:last-of-type { order: 4; height: 300px; position: relative;}
 	}
 }

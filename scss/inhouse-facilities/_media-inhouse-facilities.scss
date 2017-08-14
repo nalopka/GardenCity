@@ -1,4 +1,4 @@
-@include mq("tablet", max) {
+@include mq("desktop", max) {
 	.inhouse {
 		height: auto;
 		flex-direction: column;

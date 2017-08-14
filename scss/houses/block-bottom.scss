@@ -2,9 +2,5 @@
 		width            : 100%;
 		background-color : $comma-bg;
 		height           : 20%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		.container {
-			justify-content  : center;}
+		@extend .comma-block;
 }

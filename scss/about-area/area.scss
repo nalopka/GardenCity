@@ -6,65 +6,52 @@
 	position: relative;
 	font-size: 1.375rem;
 	.area-block {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
 		width: 50%;
 	}
 	// -------
 	// WHITE BLOCK
-	.area-block:first-of-type {
+	.white {
+		@extend .white-block;
 		overflow: hidden;
 		background-color: white; 
 		height: 40%;
 		h2:after {
-			content:"Участок";} 
+			content:" "attr(data-text)" ";} 
 		p { padding-top: 20px; width: 90%;}
 	}
 
 	// -------
 	// GREEN BLOCK
-	.area-block:nth-of-type(2) {
-		background:transparent url('../img/about-area/green.jpg') center no-repeat;
-		background-size: 100% 100%;
+	.green {
+		@extend .shop-block;
+		background:transparent url('../img/about-area/green.jpg') center/cover no-repeat;
 		height: 20%; 
-		color: white;
-		.container {
-			align-items: center;
-			width: 45%;}
-	}
-
+		color: white;}
 	// -------
 	// BLUE BLOCK
-	.area-block:nth-of-type(3) {
+	.blue {
 		color: white;
-		background:transparent url('../img/about-area/blue.jpg') left top no-repeat; 
-		background-size: 100% 100%;
-		height: 20%; 
-		.container {
-			align-items: center;
-			width: 60%;}
-	}
+		@extend .shop-block;
+		background:transparent url('../img/about-area/blue.jpg') center/cover no-repeat; 
+		height: 20%;}
 	// --------
 	// COMMA BLOCK
 	.area-block:nth-of-type(4) {
+		@extend .comma-block;
 		background-color: $comma-bg; 
 		height: 25%; 
 	}
 	// -------------
 	// CLAY BLOCK
-	.area-block:nth-of-type(5){
+	.clay{
 		color: white;
-		background:transparent url('../img/about-area/clay.jpg') left top no-repeat;
-		background-size: 100% 100%;
-		height: 55%; 
-		.container {
-			align-items: center;
-			width: 40%;}
-	}
+		@extend .shop-block;
+		background:transparent url('../img/about-area/clay.jpg') center/cover no-repeat;
+		height: 55%;}
 	// ------
 	// BOTTOM BLOCK
 	.area-block:last-of-type {
+		@extend .comma-block;
 		position: absolute;
 		left: 0;
 		bottom: 0;

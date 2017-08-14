@@ -5,19 +5,15 @@
 	flex-flow: row wrap;
 	min-height: 800px;
 	.decor-item {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
 		height: 100%;
 		width: 33.3%;}
 	.decor-item:first-of-type {
+		@extend .white-block;
 		background-color: white;
 		overflow: hidden;
-		.container { height: 40%;}
-		p {padding-top: 10px;}
 		h2 {
 			max-width: 250px;
-			&:after{
+			&:after {
 				content: "Мебель и  декор"; 
 				line-height: 90px; 
 				width: 500px;
@@ -25,9 +21,8 @@
 		}
 	}
 	.decor-item:nth-of-type(2) {
-		background:transparent url('../img/decor/middle.jpg') left top no-repeat;
-		background-size: 100% 100%;
-		.container { height: 20%; align-items: center;}
+		@extend .shop-block;
+		background:transparent url('../img/decor/middle.jpg') center/cover no-repeat;
 		.upperline {color: black; &:before{border-color: black;}}
 	}
 	.decor-item:nth-of-type(3) {
@@ -36,17 +31,15 @@
 		flex-direction: column;
 		.up, .down {
 			height: 50%; 
-			display: flex; 
-			justify-content: space-around; 
-			align-items: center;
-			.container{align-items: center;}
+			
 		}
 		.up {
-			background: transparent url('../img/decor/pink.jpg') left top no-repeat;
-			background-size: cover;
+			@extend .shop-block;
+			background: transparent url('../img/decor/pink.jpg') center/cover no-repeat;
 			color: white;
 			width: 100%;}
 		.down {
+			@extend .comma-block;
 
 		}
 	}

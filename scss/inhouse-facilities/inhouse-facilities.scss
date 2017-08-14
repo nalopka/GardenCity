@@ -4,17 +4,13 @@
 	display: flex;
 	.inhouse-block {
 		display: flex;
-		align-items: center;
-		justify-content: space-around;
 		width: 33.3%;
 		height: 100%;}
 	.left {
-		background:transparent url('../img/inhouse-facilities/left.jpg') left top no-repeat;
-		background-size: 100% 100%;
+		background:transparent url('../img/inhouse-facilities/left.jpg') center/cover no-repeat;
 	}
 	.middle {
-		background:transparent url('../img/inhouse-facilities/middle.jpg') left top no-repeat;
-		background-size: 100% 100%;
+		background:transparent url('../img/inhouse-facilities/middle.jpg') center/cover no-repeat;
 		color: white;
 		.upperline {
 			color: white;
@@ -22,11 +18,9 @@
 
 	}
 	.right {
-		background:transparent url('../img/inhouse-facilities/right.jpg') left top no-repeat;
-		background-size: 100% 100%;
+		background:transparent url('../img/inhouse-facilities/right.jpg') center/cover no-repeat;
 		color: black;
 	}
-	.container {justify-content: center; align-items: center;}
 	.upperline {
 		color: black;
 		&:before {border-color: black;}
