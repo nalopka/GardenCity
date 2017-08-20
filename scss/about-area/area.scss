@@ -24,7 +24,7 @@
 	// GREEN BLOCK
 	.green {
 		@extend .shop-block;
-		background:transparent url('../img/about-area/green.jpg') center/cover no-repeat;
+		@include bg-image("about-area/green.jpg");
 		height: 20%; 
 		color: white;}
 	// -------
@@ -32,7 +32,7 @@
 	.blue {
 		color: white;
 		@extend .shop-block;
-		background:transparent url('../img/about-area/blue.jpg') center/cover no-repeat; 
+		@include bg-image("about-area/blue.jpg");
 		height: 20%;}
 	// --------
 	// COMMA BLOCK
@@ -46,7 +46,7 @@
 	.clay{
 		color: white;
 		@extend .shop-block;
-		background:transparent url('../img/about-area/clay.jpg') center/cover no-repeat;
+		@include bg-image("about-area/clay.jpg");
 		height: 55%;}
 	// ------
 	// BOTTOM BLOCK

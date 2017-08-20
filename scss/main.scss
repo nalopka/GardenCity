@@ -8,7 +8,7 @@ p, h1, h2, h3, span {
 html {
 	line-height: 1.4;
 	font-size: 16px;
-	font-family: Georgia, Lato;
+	font-family: Lato, Georgia;
 }
 body {
 	max-width: 2000px;
@@ -22,9 +22,9 @@ body {
 @import "main-style";
 
 
-@import "header/header";
+@import "header/header" ;
 @import "review/review";
-@import "houses/houses";
+@import "houses/houses", "houses/_media-houses";
 @import "inhouse-facilities/inhouse-facilities";
 @import "about-area/area";
 @import "decor/decor";

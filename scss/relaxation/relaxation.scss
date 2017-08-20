@@ -1,3 +1,4 @@
+
 .relaxation {
 	height: 130vh;
 	min-height: 1200px;
@@ -15,7 +16,7 @@
 	.bathhouse {
 		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/bathhouse.jpg') center/cover no-repeat;
+		@include bg-image("relaxation/bathhouse.jpg");
 		height: 30%;}
 
 	.white {
@@ -28,13 +29,13 @@
 	.bbq {
 		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/bbq.jpg') center/cover no-repeat;
+		@include bg-image("relaxation/bbq.jpg");
 		height: 30%;}
 
 	.playground {
 		@extend .shop-block;
 		color: white;
-		background:transparent url('../img/relaxation/playground.jpg') center/cover no-repeat;
+		@include bg-image("relaxation/playground.jpg");
 		height: 70%;}
 
 	.comma {
@@ -43,5 +44,4 @@
 		background-color: $comma-bg;
 		height: 30%;}
 }
-
 @import "_media-relaxation.scss";

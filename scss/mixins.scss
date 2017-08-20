@@ -21,3 +21,6 @@ $breakpoints: (
         }
     }
 }
+@mixin bg-image($path) {
+    background:transparent url('../img/#{$path}') center/cover no-repeat;
+}

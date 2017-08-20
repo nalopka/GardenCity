@@ -3,16 +3,18 @@
 		height: auto;
 		min-height: 1300px;
 		flex-flow: column;
-		.decor-item {
+		.white,
+		.furniture,
+		.right-block {
 			width: 100%;}
-		.decor-item:first-of-type {
+		.white {
 			height: 400px;
 			h2:after { width: 700px; line-height: 100px;}
 		}
-		.decor-item:nth-of-type(2) {
+		.furniture {
 			height: 300px;
 		}
-		.decor-item:nth-of-type(3) {
+		.right-block {
 			height: 600px;
 			.up, .down {
 				height: 300px;}

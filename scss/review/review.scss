@@ -33,7 +33,7 @@
 	.right {
 		justify-content: space-between;
 		color           : $milk;
-		background      : transparent url('../img/review/location.png') center/cover no-repeat;
+		@include bg-image("review/location.png");
 		padding-bottom: 10%;
 		h2 {
 			&:before { border-color: $milk;}

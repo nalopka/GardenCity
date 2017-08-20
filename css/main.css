@@ -9,7 +9,7 @@ p, h1, h2, h3, span {
 html {
   line-height: 1.4;
   font-size: 16px;
-  font-family: Georgia, Lato; }
+  font-family: Lato, Georgia; }
 
 body {
   max-width: 2000px;
@@ -40,7 +40,8 @@ body {
   font-family: Lato;
   src: url(../fonts/Lato/Lato-Black.ttf);
   font-weight: 900; }
-.white-block, .houses .white, .area .white, .decor .decor-item:first-of-type, .relaxation .white {
+.white-block, .houses .project,
+.houses .ready-house, .area .white, .decor .white, .relaxation .white {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -49,11 +50,14 @@ body {
   overflow: hidden;
   padding: 0 5% 0 5%;
   box-sizing: border-box; }
-  .white-block p, .houses .white p, .area .white p, .decor .decor-item:first-of-type p, .relaxation .white p {
+  .white-block p, .houses .project p,
+  .houses .ready-house p, .area .white p, .decor .white p, .relaxation .white p {
     padding-bottom: 20px; }
 
 .shop-block, .houses .panel-house,
-.houses .wood-house, .area .green, .area .blue, .area .clay, .decor .decor-item:nth-of-type(2), .decor .decor-item:nth-of-type(3) .up, .relaxation .bathhouse, .relaxation .bbq, .relaxation .playground {
+.houses .wood-house, .inhouse .left,
+.inhouse .right,
+.inhouse .middle, .area .green, .area .blue, .area .clay, .decor .furniture, .decor .right-block .up, .relaxation .bathhouse, .relaxation .bbq, .relaxation .playground {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,30 +85,33 @@ h2 {
     content: " " attr(data-name) " ";
     font-size: 7.5rem;
     font-weight: 400;
+    font-family: Georgia;
     font-style: italic; }
 
-.comma-block, .review .bottom, .houses .bottom, .area .area-block:nth-of-type(4), .area .area-block:last-of-type, .decor .decor-item:nth-of-type(3) .down, .relaxation .comma {
+.comma-block, .review .bottom, .houses .bottom, .area .area-block:nth-of-type(4), .area .area-block:last-of-type, .decor .right-block .down, .relaxation .comma {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #fffcf3; }
-  .comma-block p, .review .bottom p, .houses .bottom p, .area .area-block:nth-of-type(4) p, .area .area-block:last-of-type p, .decor .decor-item:nth-of-type(3) .down p, .relaxation .comma p {
+  .comma-block p, .review .bottom p, .houses .bottom p, .area .area-block:nth-of-type(4) p, .area .area-block:last-of-type p, .decor .right-block .down p, .relaxation .comma p {
     position: relative;
     font-size: 1.375rem;
     font-style: italic;
     text-align: center;
     width: 380px;
     height: 70px; }
-    .comma-block p:before, .review .bottom p:before, .houses .bottom p:before, .area .area-block:nth-of-type(4) p:before, .area .area-block:last-of-type p:before, .decor .decor-item:nth-of-type(3) .down p:before, .relaxation .comma p:before {
+    .comma-block p:before, .review .bottom p:before, .houses .bottom p:before, .area .area-block:nth-of-type(4) p:before, .area .area-block:last-of-type p:before, .decor .right-block .down p:before, .relaxation .comma p:before {
       position: absolute;
+      display: inline-block;
       content: "";
       width: 115px;
       border-bottom: 2px solid black;
       left: 130px;
       bottom: -30px; }
-    .comma-block p:after, .review .bottom p:after, .houses .bottom p:after, .area .area-block:nth-of-type(4) p:after, .area .area-block:last-of-type p:after, .decor .decor-item:nth-of-type(3) .down p:after, .relaxation .comma p:after {
+    .comma-block p:after, .review .bottom p:after, .houses .bottom p:after, .area .area-block:nth-of-type(4) p:after, .area .area-block:last-of-type p:after, .decor .right-block .down p:after, .relaxation .comma p:after {
       font-style: italic;
+      font-family: Georgia;
       position: absolute;
       top: 40%;
       left: -46px;
@@ -115,6 +122,7 @@ h2 {
       color: #f5ebce; }
 
 h3 {
+  width: 400px;
   position: relative;
   font-size: 2.5rem;
   font-weight: 400;
@@ -154,20 +162,21 @@ h3 {
     top: -30px; }
 
   h3 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    width: 250px; }
 
   .upperline {
     font-size: 1rem; }
 
-  .comma-block p, .review .bottom p, .houses .bottom p, .area .area-block:nth-of-type(4) p, .area .area-block:last-of-type p, .decor .decor-item:nth-of-type(3) .down p, .relaxation .comma p {
+  .comma-block p, .review .bottom p, .houses .bottom p, .area .area-block:nth-of-type(4) p, .area .area-block:last-of-type p, .decor .right-block .down p, .relaxation .comma p {
     width: 300px; }
-    .comma-block p:before, .review .bottom p:before, .houses .bottom p:before, .area .area-block:nth-of-type(4) p:before, .area .area-block:last-of-type p:before, .decor .decor-item:nth-of-type(3) .down p:before, .relaxation .comma p:before {
+    .comma-block p:before, .review .bottom p:before, .houses .bottom p:before, .area .area-block:nth-of-type(4) p:before, .area .area-block:last-of-type p:before, .decor .right-block .down p:before, .relaxation .comma p:before {
       left: 90px;
       bottom: -60px; }
-    .comma-block p:after, .review .bottom p:after, .houses .bottom p:after, .area .area-block:nth-of-type(4) p:after, .area .area-block:last-of-type p:after, .decor .decor-item:nth-of-type(3) .down p:after, .relaxation .comma p:after {
+    .comma-block p:after, .review .bottom p:after, .houses .bottom p:after, .area .area-block:nth-of-type(4) p:after, .area .area-block:last-of-type p:after, .decor .right-block .down p:after, .relaxation .comma p:after {
       left: 0; }
 
-  .comma-block:after, .review .bottom:after, .houses .bottom:after, .area .area-block:nth-of-type(4):after, .area .area-block:last-of-type:after, .decor .decor-item:nth-of-type(3) .down:after, .relaxation .comma:after {
+  .comma-block:after, .review .bottom:after, .houses .bottom:after, .area .area-block:nth-of-type(4):after, .area .area-block:last-of-type:after, .decor .right-block .down:after, .relaxation .comma:after {
     left: 0; } }
 .header {
   height: 100vh;
@@ -244,16 +253,15 @@ h3 {
   flex-flow: column wrap;
   font-size: 1.375rem;
   position: relative; }
-  .houses .white,
+  .houses .project,
+  .houses .ready-house,
   .houses .panel-house,
   .houses .wood-house {
     width: 50%;
     height: 40%; }
   .houses .panel-house h3,
   .houses .wood-house h3 {
-    color: white;
-    padding: 0 25%;
-    box-sizing: border-box; }
+    color: white; }
   .houses .panel-house p,
   .houses .wood-house p {
     color: white; }
@@ -276,25 +284,38 @@ h3 {
     height: auto;
     min-height: 1400px;
     flex-flow: column; }
-    .houses .white,
+    .houses .project,
+    .houses .ready-house,
     .houses .panel-house,
     .houses .wood-house,
     .houses .bottom {
       width: 100%; }
-    .houses .white {
+    .houses .ready-house,
+    .houses .project {
       height: 400px; }
     .houses .panel-house,
     .houses .wood-house,
     .houses .bottom {
       height: 300px; }
     .houses .bottom {
-      position: relative; } }
+      position: relative; }
+    .houses .project {
+      order: 1; }
+    .houses .panel-house {
+      order: 2; }
+    .houses .ready-house {
+      order: 3; }
+    .houses .wood-house {
+      order: 4; }
+    .houses .bottom {
+      order: 5; } }
 .inhouse {
   height: 80vh;
   min-height: 600px;
   display: flex; }
-  .inhouse .inhouse-block {
-    display: flex;
+  .inhouse .left,
+  .inhouse .right,
+  .inhouse .middle {
     width: 33.3%;
     height: 100%; }
   .inhouse .left {
@@ -318,7 +339,9 @@ h3 {
   .inhouse {
     height: auto;
     flex-direction: column; }
-    .inhouse .inhouse-block {
+    .inhouse .left,
+    .inhouse .middle,
+    .inhouse .right {
       width: 100%;
       height: 300px; } }
 .area {
@@ -390,29 +413,30 @@ h3 {
   display: flex;
   flex-flow: row wrap;
   min-height: 800px; }
-  .decor .decor-item {
+  .decor .white,
+  .decor .furniture,
+  .decor .right-block {
     height: 100%;
     width: 33.3%; }
-  .decor .decor-item:first-of-type {
-    background-color: white;
+  .decor .white {
     overflow: hidden; }
-    .decor .decor-item:first-of-type h2:after {
+    .decor .white h2:after {
       line-height: 70px;
       width: 400px;
       top: -30px; }
-  .decor .decor-item:nth-of-type(2) {
+  .decor .furniture {
     background: transparent url("../img/decor/middle.jpg") center/cover no-repeat; }
-    .decor .decor-item:nth-of-type(2) .upperline {
+    .decor .furniture .upperline {
       color: black; }
-      .decor .decor-item:nth-of-type(2) .upperline:before {
+      .decor .furniture .upperline:before {
         border-color: black; }
-  .decor .decor-item:nth-of-type(3) {
+  .decor .right-block {
     overflow: hidden;
     display: flex;
     flex-direction: column; }
-    .decor .decor-item:nth-of-type(3) .up, .decor .decor-item:nth-of-type(3) .down {
+    .decor .right-block .up, .decor .right-block .down {
       height: 50%; }
-    .decor .decor-item:nth-of-type(3) .up {
+    .decor .right-block .up {
       background: transparent url("../img/decor/pink.jpg") center/cover no-repeat;
       color: white;
       width: 100%; }
@@ -422,20 +446,22 @@ h3 {
     height: auto;
     min-height: 1300px;
     flex-flow: column; }
-    .decor .decor-item {
+    .decor .white,
+    .decor .furniture,
+    .decor .right-block {
       width: 100%; }
-    .decor .decor-item:first-of-type {
+    .decor .white {
       height: 400px; }
-      .decor .decor-item:first-of-type h2:after {
+      .decor .white h2:after {
         width: 700px;
         line-height: 100px; }
-    .decor .decor-item:nth-of-type(2) {
+    .decor .furniture {
       height: 300px; }
-    .decor .decor-item:nth-of-type(3) {
+    .decor .right-block {
       height: 600px; }
-      .decor .decor-item:nth-of-type(3) .up, .decor .decor-item:nth-of-type(3) .down {
+      .decor .right-block .up, .decor .right-block .down {
         height: 300px; }
-    .decor .comma-block p:before, .decor .review .bottom p:before, .review .decor .bottom p:before, .decor .houses .bottom p:before, .houses .decor .bottom p:before, .decor .area .area-block:nth-of-type(4) p:before, .area .decor .area-block:nth-of-type(4) p:before, .decor .area .area-block:last-of-type p:before, .area .decor .area-block:last-of-type p:before, .decor .decor-item:nth-of-type(3) .down p:before, .decor .relaxation .comma p:before, .relaxation .decor .comma p:before {
+    .decor .comma-block p:before, .decor .review .bottom p:before, .review .decor .bottom p:before, .decor .houses .bottom p:before, .houses .decor .bottom p:before, .decor .area .area-block:nth-of-type(4) p:before, .area .decor .area-block:nth-of-type(4) p:before, .decor .area .area-block:last-of-type p:before, .area .decor .area-block:last-of-type p:before, .decor .right-block .down p:before, .decor .relaxation .comma p:before, .relaxation .decor .comma p:before {
       bottom: -30px; } }
 .relaxation {
   height: 130vh;
@@ -488,7 +514,7 @@ h3 {
       height: 500px; }
       .relaxation .white p {
         width: 100%; }
-    .relaxation .comma-block p:before, .relaxation .review .bottom p:before, .review .relaxation .bottom p:before, .relaxation .houses .bottom p:before, .houses .relaxation .bottom p:before, .relaxation .area .area-block:nth-of-type(4) p:before, .area .relaxation .area-block:nth-of-type(4) p:before, .relaxation .area .area-block:last-of-type p:before, .area .relaxation .area-block:last-of-type p:before, .relaxation .decor .decor-item:nth-of-type(3) .down p:before, .decor .decor-item:nth-of-type(3) .relaxation .down p:before, .relaxation .comma p:before {
+    .relaxation .comma-block p:before, .relaxation .review .bottom p:before, .review .relaxation .bottom p:before, .relaxation .houses .bottom p:before, .houses .relaxation .bottom p:before, .relaxation .area .area-block:nth-of-type(4) p:before, .area .relaxation .area-block:nth-of-type(4) p:before, .relaxation .area .area-block:last-of-type p:before, .area .relaxation .area-block:last-of-type p:before, .relaxation .decor .right-block .down p:before, .decor .right-block .relaxation .down p:before, .relaxation .comma p:before {
       bottom: -30px; } }
 .footer {
   min-height: 400px;

@@ -241,8 +241,8 @@
 	"\/pug\/about-area\/area.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/pug\/about-area\/area.jade",
 		"outputAbbreviatedPath": "\/pug\/about-area\/area.html",
 		"outputPathIsOutsideProject": 0,

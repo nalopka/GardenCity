@@ -3,13 +3,15 @@
 		height: auto;
 		min-height: 1400px;
 		flex-flow: column;
-		.white,
+		.project,
+		.ready-house,
 		.panel-house,
 		.wood-house,
 		.bottom {
 			width: 100%;
 		}
-		.white {
+		.ready-house,
+		.project {
 			height: 400px;
 		}
 		.panel-house,
@@ -18,6 +20,12 @@
 			height: 300px;
 		}
 		.bottom { position: relative;}
+
+		.project { order: 1;}
+		.panel-house { order: 2;}
+		.ready-house { order: 3;}
+		.wood-house { order: 4;}
+		.bottom {order: 5;}
 
 	}
 }

@@ -2,15 +2,17 @@
 	height: 80vh;
 	min-height: 600px;
 	display: flex;
-	.inhouse-block {
-		display: flex;
+	.left,
+	.right,
+	.middle {
+		@extend .shop-block;
 		width: 33.3%;
 		height: 100%;}
 	.left {
-		background:transparent url('../img/inhouse-facilities/left.jpg') center/cover no-repeat;
+		@include bg-image("inhouse-facilities/left.jpg");
 	}
 	.middle {
-		background:transparent url('../img/inhouse-facilities/middle.jpg') center/cover no-repeat;
+		@include bg-image("inhouse-facilities/middle.jpg");
 		color: white;
 		.upperline {
 			color: white;
@@ -18,7 +20,7 @@
 
 	}
 	.right {
-		background:transparent url('../img/inhouse-facilities/right.jpg') center/cover no-repeat;
+		@include bg-image("inhouse-facilities/right.jpg");
 		color: black;
 	}
 	.upperline {
