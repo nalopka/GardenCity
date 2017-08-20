@@ -19,14 +19,14 @@ body {
 @import "UI/fonts";
 @import "UI/color";
 @import "mixins";
-@import "main-style";
+@import "main-style", "_media-main-style";
 
 
-@import "header/header" ;
-@import "review/review";
+@import "header/header", "header/_media-header";
+@import "review/review", "review/_media-review";
 @import "houses/houses", "houses/_media-houses";
-@import "inhouse-facilities/inhouse-facilities";
-@import "about-area/area";
-@import "decor/decor";
-@import "relaxation/relaxation";
-@import "footer/footer.scss";
+@import "inhouse-facilities/inhouse-facilities", "inhouse-facilities/_media-inhouse-facilities";
+@import "about-area/area", "about-area/_media-about-area";
+@import "decor/decor", "decor/_media-decor";
+@import "relaxation/relaxation", "relaxation/_media-relaxation";
+@import "footer/footer.scss", "footer/_media-footer";

@@ -516,6 +516,25 @@ h3 {
         width: 100%; }
     .relaxation .comma-block p:before, .relaxation .review .bottom p:before, .review .relaxation .bottom p:before, .relaxation .houses .bottom p:before, .houses .relaxation .bottom p:before, .relaxation .area .area-block:nth-of-type(4) p:before, .area .relaxation .area-block:nth-of-type(4) p:before, .relaxation .area .area-block:last-of-type p:before, .area .relaxation .area-block:last-of-type p:before, .relaxation .decor .right-block .down p:before, .decor .right-block .relaxation .down p:before, .relaxation .comma p:before {
       bottom: -30px; } }
+@media screen and (max-width: 1023px) {
+  .relaxation {
+    height: auto;
+    min-height: 1000px; }
+    .relaxation .bathhouse,
+    .relaxation .white,
+    .relaxation .bbq,
+    .relaxation .playground,
+    .relaxation .comma {
+      width: 100%;
+      height: 300px; }
+    .relaxation .bathhouse {
+      height: 300px; }
+    .relaxation .white {
+      height: 500px; }
+      .relaxation .white p {
+        width: 100%; }
+    .relaxation .comma-block p:before, .relaxation .review .bottom p:before, .review .relaxation .bottom p:before, .relaxation .houses .bottom p:before, .houses .relaxation .bottom p:before, .relaxation .area .area-block:nth-of-type(4) p:before, .area .relaxation .area-block:nth-of-type(4) p:before, .relaxation .area .area-block:last-of-type p:before, .area .relaxation .area-block:last-of-type p:before, .relaxation .decor .right-block .down p:before, .decor .right-block .relaxation .down p:before, .relaxation .comma p:before {
+      bottom: -30px; } }
 .footer {
   min-height: 400px;
   height: 50vh;
